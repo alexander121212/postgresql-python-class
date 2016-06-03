@@ -67,9 +67,10 @@ db.select('car', conditional_query, 'id_car', 'car_text', car_make='nissan')
 ###Insert method
 
 Inserting data is really simple and intuitive, where we are going to reference the column and the values
-
-  result = connect_msyql.insert('car', car_make='ford', car_model='escort', car_year='2005')
-Result: The function return the last row id was inserted.
+```python
+db.insert('Auto', id=1, name='audi', price='300000', mark='a6')
+db.insert('Auto', id=2, name='BMW', price='400000', mark='x5')
+```
 
 ### Update method
 
